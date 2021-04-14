@@ -1,12 +1,16 @@
 function palindromo (string) {
-  for (var i = 0; i < string.lenght() / 2; i++) {
+  var len = string.length;
+  var result = 0
+
+  for (var i = 0; i < len / 2; i++) {
     if (string[i] !== string[len - i - 1]) {
-      return 'Non palindromo'
-      break
+      result = 'Non palindromo'
     }else{
-      return 'Palindromo'
+      result = 'Palindromo'
     }
   }
+
+  return result
 }
 
 var parola = prompt('Inserisci una parola')
